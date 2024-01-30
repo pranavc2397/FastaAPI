@@ -5,7 +5,7 @@ from .routes import post, user, auth,vote
 from fastapi.middleware.cors import CORSMiddleware
 #we are using pydantic to do schema validation
 
-#models.Base.metadata.create_all(bind=engine)
+models.Base.metadata.create_all(bind=engine)
 # it tells to create the models if they are not created
 app = FastAPI() #fast api instance is app
 origins = ["*"]
